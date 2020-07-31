@@ -353,18 +353,18 @@ dots[slide_Index-1].className += " active";
 					<h2>Get in touch</h2>
 					</div>
 					<div class="col-sm-8">
-						<form class="my-form" role="form">
+						<form method="POST" class="my-form" action="https://formspree.io/myynoknw">
 						  <div class="form-group">
-							<input type="text" class="form-control" id="name" placeholder="Name">
+							<input type="text" class="form-control" id="name" placeholder="name">
 						  </div>
 						  <div class="form-group">
-							<input type="email" class="form-control" id="email" placeholder="Email">
+							<input type="email" class="form-control" id="email" placeholder="email" name="_replyto">
 						  </div>
 						  <div class="form-group">
 							<textarea class="form-control" name="message" id="message" rows="7" cols="25" style="resize:none;" required="required" placeholder="The web page created by mubaris if you have any suggestion please write here "></textarea>
 						  </div>
-						  
-						  <button type="submit" class="btn btn-default btn-block">SEND MESSAGE</button>
+
+						  <button type="submit" class="btn btn-default btn-block" value="send">SEND MESSAGE</button>
 						</form>
 					</div>
 					
