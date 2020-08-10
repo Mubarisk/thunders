@@ -5,25 +5,47 @@
 showSlide(slide_Index);
 
 
-function plusSlides(n){
+	$(".back").click(function(){
+		slide_Index=slide_Index-1;
+		showSlide(slide_Index);
+	});
 
-showSlide(slide_Index += n);
+	$(".next").click(function(){
+		slide_Index=slide_Index+1;
+		showSlide(slide_Index);
+	});
 
-}
 
 
-function currentSlide(n) {
-	
-showSlide(slide_Index = n);
 
-}
+
+$("#1").click(function(){
+
+	showSlide(slide_Index = 1);
+});
+
+$("#2").click(function(){
+
+	showSlide(slide_Index = 2);
+});
+
+$("#3").click(function(){
+
+	showSlide(slide_Index = 3);
+});
+
+$("#4").click(function(){
+
+	showSlide(slide_Index = 4);
+});
+
 
 
 
 function showSlide(n){
 	
 
-
+	
 var i;
 
 var slides = document.getElementsByClassName("myslides");
